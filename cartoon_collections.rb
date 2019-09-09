@@ -10,7 +10,7 @@ def long_planeteer_calls(source_array)
    source_array.any? {|val| val.length > 4}
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(source_array)
   cheese_types = ["cheddar", "gouda", "camembert"]
+source_array.select {|val|  cheese_types.include?(val)}[0]
 end
